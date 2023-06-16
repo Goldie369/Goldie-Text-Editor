@@ -34,4 +34,8 @@ This screenshot demonstrates the app running in a browser window.
 
 ![insert link]()
 
+## Questions
+
+If you have any questions regarding this project, please don't hesitate to contact me using my email address: zlatelinarizova@gmail.com. You can find my project repositories here: [Goldie369](https://github.com/Goldie369/Text-Editor).
+
 
