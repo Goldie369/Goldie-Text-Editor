@@ -1,5 +1,5 @@
 {
-  "name": "JATE",
+  "name": "jate",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -21,5 +21,13 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Goldie369/Goldie-Text-Editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Goldie369/Goldie-Text-Editor/issues"
+  },
+  "homepage": "https://github.com/Goldie369/Goldie-Text-Editor#readme"
 }
