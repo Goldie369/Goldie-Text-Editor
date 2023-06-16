@@ -1,3 +1,10 @@
+//-- The openDB function is imported from the 'idb' library. This function is used to open a connection to the IndexedDB database--//
+//-- The initdb function is defined as an asynchronous function. It initializes the 'jate' database--//
+//-- The putDb function is defined as an asynchronous function that accepts content as input--//
+//-- The getDb function is defined as an asynchronous function. It connects to the 'jate' database, opens a transaction with read-only privileges--//
+//--The initdb() function is called to initialize the database when the script runs--//
+
+
 import { openDB } from 'idb';
 
 const initdb = async () =>
@@ -12,32 +19,32 @@ const initdb = async () =>
     },
   });
 
-// Accept input and add content to the database
+
 export const putDb = async (content) => {
   console.log('PUT to the database');
 
-  const jateDb = await openDB('jate', 1); // connect 
-  const tx = jateDb.transaction('jate', 'readwrite'); // new transaction and privileges to edit
-  const store = tx.objectStore('jate'); // obj to store
-  const request = store.put({ id: 1, value: content }); // put data
+  const jateDb = await openDB('jate', 1); 
+  const tx = jateDb.transaction('jate', 'readwrite'); 
+  const store = tx.objectStore('jate'); 
+  const request = store.put({ id: 1, value: content }); 
   const result = await request;
 
-  console.log('Data saved.', result); // confirm result
+  console.log('Data saved.', result); 
 };
 
-// Get all the content from the database
+
 export const getDb = async () => {
   console.log('GET from the database');
 
   const jateDb = await openDB('jate', 1); 
-  const tx = jateDb.transaction('jate', 'readonly'); // speficy privileges
+  const tx = jateDb.transaction('jate', 'readonly'); 
   const store = tx.objectStore('jate'); 
-  const request = store.getAll(); // get all data
+  const request = store.getAll(); 
   const result = await request; 
   
-  console.log('result.value', result); // confirm result
+  console.log('result.value', result); 
 
-  return result.value; // return only string 
+  return result.value; 
 };
 
 initdb();
