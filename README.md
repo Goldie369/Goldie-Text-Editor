@@ -41,8 +41,6 @@ If you have any questions regarding this project, please don't hesitate to conta
 
 ## Resources
 
-This list includes resources used for the project.
-
 - [Best README Template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
 - [concurrently](https://www.npmjs.com/package/concurrently)
 - [Express](https://expressjs.com/)

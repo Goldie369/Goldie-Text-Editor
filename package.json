@@ -1,19 +1,19 @@
 {
-  "name": "jate",
+  "name": "JATE",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a simple text editor application that writes and saves code snippets.",
   "main": "server.js",
   "scripts": {
-    "start:dev": "",
-    "start": "",
-    "server": "",
-    "build": "",
-    "install": "",
-    "client": ""
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "client": "cd client && npm start"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
     "if-env": "^1.0.4"
@@ -21,13 +21,5 @@
   "devDependencies": {
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Goldie369/Goldie-Text-Editor.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Goldie369/Goldie-Text-Editor/issues"
-  },
-  "homepage": "https://github.com/Goldie369/Goldie-Text-Editor#readme"
+  }
 }
