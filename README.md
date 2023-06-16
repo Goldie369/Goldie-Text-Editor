@@ -24,15 +24,11 @@ This Text Editor is designed for users who need a way to save text or code snipp
 
   ## Demo
 
-You can check out the app following [this link.]()
+You can check out the app following [this link.](https://github.com/Goldie369/Goldie-Text-Editor)
 
 This screenshot demonstrates the desktop app.
 
-![insert link]()
-
-This screenshot demonstrates the app running in a browser window.
-
-![insert link]()
+![insert link](./client/src/images/Screenshot%201.png)
 
 ## Questions
 
