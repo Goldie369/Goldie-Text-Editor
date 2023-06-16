@@ -39,3 +39,16 @@ This screenshot demonstrates the app running in a browser window.
 If you have any questions regarding this project, please don't hesitate to contact me using my email address: zlatelinarizova@gmail.com. You can find my project repositories here: [Goldie369](https://github.com/Goldie369/Text-Editor).
 
 
+## Resources
+
+This list includes resources used for the project.
+
+- [Best README Template](https://github.com/othneildrew/Best-README-Template/blob/master/README.md)
+- [concurrently](https://www.npmjs.com/package/concurrently)
+- [Express](https://expressjs.com/)
+- [Heroku](https://devcenter.heroku.com/)
+- [idb](https://www.npmjs.com/package/idb)
+- [Node.js](https://nodejs.org/en/)
+- [nodemon](https://www.npmjs.com/package/nodemon)
+
+
