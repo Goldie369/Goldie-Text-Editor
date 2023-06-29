@@ -28,7 +28,7 @@ You can check out the app following [this link.](https://github.com/Goldie369/Go
 
 This screenshot demonstrates the desktop app.
 
-![insert link](./client/src/images/Screenshot%201.png)
+![insert link](./client/src/images/Screen%20Shot%202023-06-28%20at%207.07.17%20PM.png)
 
 ## Questions
 
