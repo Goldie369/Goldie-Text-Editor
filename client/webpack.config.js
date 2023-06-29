@@ -15,30 +15,24 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      // Generate html file
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'J.A.T.E'
       }),
-
-      // Inject sw
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
-
-      // Inject manifest.json
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
         name: 'Just Another Text Editor',
         short_name: 'J.A.T.E',
-        description: 'Save and edit your code.',
+        description: 'Takes notes with JavaScript syntax highlighting!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        id: './',
-        start_url: './',
-        publicPath: './',
+        start_url: '/',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
@@ -53,13 +47,11 @@ module.exports = () => {
       rules: [
         {
           test: /\.css$/i,
-          // css loaders
           use: ['style-loader', 'css-loader'],
         },
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
-          // babel-loader
           use: {
             loader: 'babel-loader',
             options: {
